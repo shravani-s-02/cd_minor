@@ -33,7 +33,7 @@ comment	\/\*[^*]*\*+([^/*][^*]*\*+)*\/
 
 %%
 {w} /*Ignore white spaces*/
-comment {printf("%s\tCOMMENT\n", yytext);}
+{comment} {printf("%s\tCOMMENT\n", yytext);}
 {ident} {printf("%s\tIDENT(identifier)\n", yytext);}
 @{ident} {printf("%s\tATKEYWORD\n", yytext);}
 {string} {printf("%s\tSTRING\n", yytext);}
