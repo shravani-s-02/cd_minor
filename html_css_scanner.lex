@@ -2,7 +2,6 @@
 /*Lexical Analyzer for HTML and CSS*/
 /*Name: Mahima Lanka(18MCME06), Shravani V S Sista(19MCME01)*/
 #include<stdio.h>
-#include <math.h>
 %}
 
 ident	[-]?{nmstart}{nmchar}*
